@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CustomItemEditorAttributes</id>
+    <version>1.0.0</version>
+    <title>CustomItemEditorAttributes</title>
+    <authors>Louis de Lavenne de Choulot</authors>
+    <description>Liibrary for ItemEditorPage WPF Library</description>
+  </metadata>
+  <files>
+    <file src="bin\Release\CustomItemEditorAttributes.dll" target="lib\net45\CustomItemEditorAttributes.dll" />
+  </files>
+</package>
