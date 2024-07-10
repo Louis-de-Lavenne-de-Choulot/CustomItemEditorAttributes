@@ -20,4 +20,12 @@
         public string DefaultType { get; set; }
         public CustomSelectionAttribute(string attrName) => DefaultType = attrName;
     }
+
+    [AttributeUsage(AttributeTargets.Property)]
+    public class CustomImporterAttribute : Attribute
+    {
+        public object[] ApplyTo { get; set; }
+        public string Description { get; set; }
+        public CustomImporterAttribute(string descr, object[] applyTo) { Description = descr; ApplyTo = applyTo;}
+    }
 }
