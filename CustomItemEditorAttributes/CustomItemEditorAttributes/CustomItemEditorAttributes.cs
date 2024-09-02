@@ -18,7 +18,8 @@
     public class CustomSelectionAttribute : Attribute
     {
         public string DefaultType { get; set; }
-        public CustomSelectionAttribute(string attrName) => DefaultType = attrName;
+        public bool MultiSelection { get; set; }
+        public CustomSelectionAttribute(string attrName, bool multiSelection = false) { DefaultType = attrName; MultiSelection = multiSelection; }
     }
 
     [AttributeUsage(AttributeTargets.Property)]
