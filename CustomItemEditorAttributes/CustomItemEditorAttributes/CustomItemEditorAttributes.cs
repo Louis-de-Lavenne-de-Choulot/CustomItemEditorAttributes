@@ -1,6 +1,6 @@
 ﻿namespace CustomItemEditorAttributes
 {
-    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Class)]
+    [AttributeUsage(AttributeTargets.All)]
     public class CustomDescriptionAttribute : Attribute
     {
         public string Description { get; set; }
